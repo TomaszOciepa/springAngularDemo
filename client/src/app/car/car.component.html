@@ -1,3 +1,15 @@
-<div *ngFor="let car of cars">
-  <h2>{{car.id}} {{car.mark}}</h2>
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Mark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{car.id}}</td>
+      <td>{{car.mark}}</td>
+    </tr>
+
+  </tbody>
+</table>
